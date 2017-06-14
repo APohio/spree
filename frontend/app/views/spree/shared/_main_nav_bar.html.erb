@@ -2,13 +2,15 @@
   <div id="main-nav-bar" class="navbar">
     <ul class="nav navbar-nav" data-hook>
       <li id="home-link" data-hook><%= link_to Spree.t(:home), spree.root_path %></li>
+      <li id="home-link" data-hook><%= link_to 'About Us', '/about-us' %></li>
+      <li id="home-link" data-hook><%= link_to 'FAQs', '/faqs' %></li>
+      <li id="home-link" data-hook><%= link_to 'Contact Us', '/contact-us' %></li>
     </ul>
     <ul class="nav navbar-nav navbar-right" data-hook>
       <li id="link-to-cart" data-hook>
         <noscript>
           <%= link_to Spree.t(:cart), '/cart' %>
         </noscript>
-        &nbsp;
       </li>
       <script>Spree.fetch_cart()</script>
     </ul>
